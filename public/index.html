@@ -32,6 +32,7 @@
 <body class="font-sans font-light bg-light-bg-clr">
     <!--==================== HEADER ====================-->
     <header class="flex flex-col items-center h-dvh px-5 md:px-8 mb-[75px]">
+      <!--==================== NAVIGATION ====================-->
       <nav class="nav flex justify-between items-center h-16 md:h-32 w-full py-4 md:py-0 px-0 md:px-[60px] z-50">
         <img src="./assets/img/logo.png" alt="Bankist logo" class="nav__logo w-[121px] md:w-[169px]" id="logo" designer="Bnsdio"
           data-version-number="3.0">
@@ -44,7 +45,8 @@
         <div class="nav__menu text-dark-text-clr text-2xl md:hidden"><box-icon name='menu'></box-icon></div>
       </nav>
 
-      <div class="header__title flex-1 flex content-center justify-center items-start justify-items-start flex-col md:flex-row mt-14 md:mt-24">
+      <!--==================== HERO SECTION ====================-->
+      <div class="header__title flex-1 flex content-center justify-center items-start justify-items-start flex-col md:flex-row mt-14 md:mt-24 md:max-w-[1400px] md:mx-auto">
         <div class="header_text mb-8 md:mb-0">
           <h1 class="text-[40px] md:text-[80px] mb-6 md:mb-8 font-medium">When
             <!-- Green highlight effect -->
@@ -59,13 +61,16 @@
       </div>
     </header>
 
-    <section class="section px-0 md:px-8" id="section--1">
-      <div class="section__title flex flex-col w-full md:w-[1390px] rounded-[32px] pt-14 md:pt-16 px-5 md:px-12 bg-card-bg-clr relative pb-8">
+    <!--==================== FEATURES ====================-->
+    <section class="section md:max-w-7xl md:mx-auto px-0 md:px-8" id="section--1">
+      <div class="section__title flex flex-col md:flex-row md:gap-12 w-full md:w-[1350px] rounded-[32px] pt-14 md:pt-16 px-5 md:px-12 bg-card-bg-clr relative pb-8">
+        <!--==================== FEATURE HEADER ====================-->
         <h2 class="section__header text-[28px] md:text-[52px] mb-4 md:mb-0 font-medium">Everything you need in a modern bank and more.</h2>
         <div class="section__content">
           <h5 class="section__description mb-6 md:mb-10 text-base md:text-2xl">Experience hassle-free banking services designed to simplify your financial life and make managing your money easier and more convenient.</h5>
           <button class="btn-text btn--scroll-to px-6 md:w-auto md:px-8 py-3 mb-[72px] md:mb-[407px]">Explore &RightArrow;</button>
         </div>
+        <!--==================== FEATURES BOX ====================-->
         <div class="section__cards md:absolute -bottom-[15%] md:left-[32px] flex flex-col md:flex-row gap-6 items-center">
           <div class="card w-[280px] md:w-[412px] rounded-[24px] md:rounded-[32px] pt-[20px] pb-6 md:pb-10 px-6 md:pt-[30px] md:px-[36px] bg-secondary-30">
             <img src="./assets/img/card__1.png" alt="digital_bank" class="h-[153.86px] w-full md:h-[212px] mb-6">
@@ -92,20 +97,33 @@
       </div>
     </section>
 
-    <section class="section" id="section--1">
+    <!--==================== OPERATIONS ====================-->
+    <section class="section md:max-w-7xl md:mx-auto" id="section--1">
+      <!--==================== OPERATIONS HEADER ====================-->
       <div class="section__title mb-11 md:mb-32">
         <h5 class="section__description text-base md:text-2xl font-semibold">OPERATIONS</h5>
         <h2 class="section__header text-[28px] md:text-[52px] font-medium">Everything as simple as possible, but no simpler.</h2>
       </div>
+      <!--==================== OPERATION BOX ====================-->
       <div class="flex flex-col md:flex-row justify-between">
         <div class="card__operation relative px-6 md:px-20 py-14 md:pt-[86px] md:pb-[64px] bg-card-bg-clr border-2 rounded-[32px] border-dark-text-clr">
-          <div class="operation__btns flex items-center justify-center gap-2 absolute -top-7">
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline">01 <span class="operation_btnHid">Instant Transfers</span></button>
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline">02 <span class="operation_btnHid hidden md:inline">Instant Loans</span></button>
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline">03 <span class="operation_btnHid hidden md:inline">Instant Closing</span></button>
+          <div class="operations__tab-container flex items-center justify-center gap-2 absolute -top-7">
+            <!--==================== OPERATION BTN ====================-->
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab operations__tab--active" data-tab="1">01 <span class="operation_btnHid">Instant Transfers</span></button>
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab" data-tab="2">02 <span class="operation_btnHid">Instant Loans</span></button>
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab" data-tab="3">03 <span class="operation_btnHid">Instant Closing</span></button>
+          </div>
+          <!--==================== OPERATION CONTENT ====================-->
+          <div class="operation__content operations__content--active">
+            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+            <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="operation__content">
-            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Buy a home or make your dreams come true, with instant loans.</h5>
+            <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="operation__content">
+            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">No longer need your account? No problem! Close it instantly.</h5>
             <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
@@ -113,12 +131,16 @@
       </div>
     </section>
 
-    <div class="section" id="section--3">
+    <!--==================== TESTIMONIALS ====================-->
+    <div class="section relative md:max-w-7xl md:mx-auto" id="section--3">
+      <!--==================== TESTIMONIAL HEADER ====================-->
       <div class="section__title mb-[80px] md:mb-[155px]">
         <h5 class="section__description text-base md:text-2xl font-semibold">NOT SURE YET?</h5>
         <h2 class="section__header text-[28px] md:text-[52px] font-medium">Millions of Bankists are already making their lifes simpler.</h2>
       </div>
-      <div class="card__testimonial relative px-6 md:px-20 py-14 md:pt-[60px] md:pb-[64px] bg-card-bg-clr border-2 rounded-[32px] border-dark-text-clr">
+      <!--==================== SLIDE ====================-->
+      <div class="slider md:px-20 md:pt-[60px] md:pb-[64px] h-[450px]">
+        <div class="card__testimonial slide px-6 md:px-20 py-14 bg-card-bg-clr border-2 rounded-[32px] border-dark-text-clr">
         <div class="testimonial__content">
           <h5 class="testimonial__title text-lg md:text-[24px] font-semibold mb-4 md:mb-6">Best financial decision ever!</h5>
           <p class="testimonial__description text-[14px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -130,29 +152,38 @@
             </div>
           </div>
         </div>
+        
       </div>
-      <div class="testimonial__btns flex items-center justify-between gap-2 md:absolute md:-top-7 mt-12 md:mt-0">
-        <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='left-arrow-alt' ></box-icon></button>
-        <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='right-arrow-alt' animation='tada' ></box-icon></button>
+      </div>
+      <!--==================== SLIDE BTN ====================-->
+      <div class="testimonial__btns flex items-center justify-between gap-2 mt-12 md:mt-0">
+        <button class="btn-text btn--scroll-to slider__btn--left px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='left-arrow-alt' ></box-icon></button>
+        <button class="btn-text btn--scroll-to slider__btn--right px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='right-arrow-alt' animation='tada' ></box-icon></button>
       </div>
     </div>
 
+    <!--==================== BRAND SECTION ====================-->
     <section class="section brand w-full mt-[86px] py-[100px] bg-dark-text-clr">
-      <h2 class="section__header text-[28px] md:text-[52px] font-medium mb-20 md:mb-[84px] text-center text-light-bg-clr">Millions of Bankists are already making their lifes simpler.</h2>
-      <button class="btn-text btn--scroll-to px-6 md:w-auto md:px-8 py-3 mb-[72px] md:mb-[407px] no-underline bg-secondary-30">Open your free account today!</button>
-    </section>
-    <footer class="section footer w-full py-[100px] bg-dark-text-clr flex gap-12 flex-col items-center">
-      <div class="footer__links text-light-bg-clr text-center flex flex-wrap text-[14px] md:text-[16px] gap-9 md:gap-10 justify-center">
-        <a href="#" class="links">About</a>
-        <a href="#" class="links">Pricing</a>
-        <a href="#" class="links">Terms of Use</a>
-        <a href="#" class="links">Privacy Policy</a>
-        <a href="#" class="links">Careers</a>
-        <a href="#" class="links">Blog</a>
-        <a href="#" class="links">Contacts</a>
+      <div class="max-width md:max-w-7xl md:mx-auto flex items-center flex-col">
+        <h2 class="section__header text-[28px] md:text-[52px] font-medium mb-20 md:mb-[84px] text-center text-light-bg-clr">Millions of Bankists are already making their lifes simpler.</h2>
+        <button class="btn-text btn--scroll-to px-6 md:w-auto md:px-8 py-3 mb-[72px] md:mb-[407px] no-underline bg-secondary-30">Open your free account today!</button>
       </div>
-      <img src="./assets/img/logomark.png" alt="" class="footer__img w-[52.28px]">
-      <p class="footer__copyright text-card-bg-clr text-[14px] md:text-[17px] text-center">© Copyright by <a href="https//bnsdiostudio.netlify" class="outer__link">Bnsd.io.</a> Don't claim as your own product.</p>
+    </section>
+    <!--==================== FOOTER ====================-->
+    <footer class="section footer w-full py-[100px] bg-dark-text-clr">
+      <div class="max-width md:max-w-7xl md:mx-auto flex gap-12 flex-col items-center">
+        <div class="footer__links text-light-bg-clr text-center flex flex-wrap text-[14px] md:text-[16px] gap-9 md:gap-10 justify-center">
+          <a href="#" class="links">About</a>
+          <a href="#" class="links">Pricing</a>
+          <a href="#" class="links">Terms of Use</a>
+          <a href="#" class="links">Privacy Policy</a>
+          <a href="#" class="links">Careers</a>
+          <a href="#" class="links">Blog</a>
+          <a href="#" class="links">Contacts</a>
+        </div>
+        <img src="./assets/img/logomark.png" alt="" class="footer__img w-[52.28px]">
+        <p class="footer__copyright text-card-bg-clr text-[14px] md:text-[17px] text-center">© Copyright by <a href="https//bnsdiostudio.netlify" class="outer__link">Bnsd.io.</a> Don't claim as your own product.</p>
+      </div>
     </footer>
     <!-- <section class="section" id="section--1">
       <div class="section__title">
