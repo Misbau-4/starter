@@ -37,16 +37,16 @@
         <img src="./assets/img/logo.png" alt="Bankist logo" class="nav__logo w-[121px] md:w-[169px]" id="logo" designer="Bnsdio"
           data-version-number="3.0">
         <ul class="nav__links hidden md:flex items-center list-none">
-          <li class="nav__item ml-14"><a href="#section--1" class="nav__link">Features</a></li>
-          <li class="nav__item ml-14"><a href="#section--2" class="nav__link">Operations</a></li>
-          <li class="nav__item ml-14"><a href="#section--3" class="nav__link">Testimonials</a></li>
-          <li class="nav__item"><a href="#" class="nav__link nav__link--btn btn--show-modal">Open Account</a></li>
+          <li class="nav__item mr-14 md:text-[17px]"><a href="#section--1" class="nav__link">Features</a></li>
+          <li class="nav__item mr-14 md:text-[17px]"><a href="#section--2" class="nav__link">Operations</a></li>
+          <li class="nav__item mr-14 md:text-[17px]"><a href="#section--3" class="nav__link">Testimonials</a></li>
+          <li class="nav__item md:text-[17px]"><a href="#" class="nav__link nav__link--btn btn--show-modal">Open Account</a></li>
         </ul>
         <div class="nav__menu text-dark-text-clr text-2xl md:hidden"><box-icon name='menu'></box-icon></div>
       </nav>
 
       <!--==================== HERO SECTION ====================-->
-      <div class="header__title flex-1 flex content-center justify-center items-start justify-items-start flex-col md:flex-row mt-14 md:mt-24 md:max-w-[1400px] md:mx-auto">
+      <div class="header__title flex-1 flex content-center justify-center items-start justify-items-start flex-col md:flex-row mt-14 md:mt-24 md:max-w-[1390px] md:mx-auto">
         <div class="header_text mb-8 md:mb-0">
           <h1 class="text-[40px] md:text-[80px] mb-6 md:mb-8 font-medium">When
             <!-- Green highlight effect -->
@@ -57,12 +57,12 @@
           <button class="btn-text btn--scroll-to w-full md:w-auto md:px-8 py-4">Bank with Us &RightArrow;</button>
         </div>
         <!-- <div class="btn-text underline font-medium border-dark-text-clr rounded-full border-2 border-solid bg-primary-30"></div> -->
-        <img src="./assets/img/hero.png" alt="Minimalist bank items" class="header__img w-full">
+        <img src="./assets/img/hero.png" alt="Minimalist bank items" class="header__img w-full md:max-w-[551px]">
       </div>
     </header>
 
     <!--==================== FEATURES ====================-->
-    <section class="section md:max-w-7xl md:mx-auto px-0 md:px-8" id="section--1">
+    <section class="section md:max-w-[1390px] md:mx-auto px-0 md:px-8" id="section--1">
       <div class="section__title flex flex-col md:flex-row md:gap-12 w-full md:w-[1350px] rounded-[32px] pt-14 md:pt-16 px-5 md:px-12 bg-card-bg-clr relative pb-8">
         <!--==================== FEATURE HEADER ====================-->
         <h2 class="section__header text-[28px] md:text-[52px] mb-4 md:mb-0 font-medium">Everything you need in a modern bank and more.</h2>
@@ -109,20 +109,20 @@
         <div class="card__operation relative px-6 md:px-20 py-14 md:pt-[86px] md:pb-[64px] bg-card-bg-clr border-2 rounded-[32px] border-dark-text-clr">
           <div class="operations__tab-container flex items-center justify-center gap-2 absolute -top-7">
             <!--==================== OPERATION BTN ====================-->
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab operations__tab--active" data-tab="1">01 <span class="operation_btnHid">Instant Transfers</span></button>
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab" data-tab="2">02 <span class="operation_btnHid">Instant Loans</span></button>
-            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab" data-tab="3">03 <span class="operation_btnHid">Instant Closing</span></button>
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab operations__tab--1 operations__tab--active" data-tab="1">01 <span class="operation_btnHid none md:inline-block">Instant Transfers</span></button>
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab operations__tab--2" data-tab="2">02 <span class="operation_btnHid none md:inline-block">Instant Loans</span></button>
+            <button class="btn-text btn--scroll-to px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline operations__tab operations__tab--3" data-tab="3">03 <span class="operation_btnHid none md:inline-block">Instant Closing</span></button>
           </div>
           <!--==================== OPERATION CONTENT ====================-->
-          <div class="operation__content operations__content--active">
-            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+          <div class="operations__content--active operations__content operations__content--1">
+            <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Transfer money to anyone, instantly! No fees, no BS.</h5>
             <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div class="operation__content">
+          <div class="hidden operations__content operations__content--2">
             <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">Buy a home or make your dreams come true, with instant loans.</h5>
             <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div class="operation__content">
+          <div class="hidden operations__content operations__content--3">
             <h5 class="operation__title text-xl md:text-[28px] font-semibold mb-4 md:mb-6">No longer need your account? No problem! Close it instantly.</h5>
             <p class="operation__description text-[12px] md:text-[17px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
@@ -139,7 +139,7 @@
         <h2 class="section__header text-[28px] md:text-[52px] font-medium">Millions of Bankists are already making their lifes simpler.</h2>
       </div>
       <!--==================== SLIDE ====================-->
-      <div class="slider md:px-20 md:pt-[60px] md:pb-[64px] h-[450px]">
+      <div class="slider md:px-20 md:pt-[60px] md:pb-[64px]">
         <div class="card__testimonial slide px-6 md:px-20 py-14 bg-card-bg-clr border-2 rounded-[32px] border-dark-text-clr">
         <div class="testimonial__content">
           <h5 class="testimonial__title text-lg md:text-[24px] font-semibold mb-4 md:mb-6">Best financial decision ever!</h5>
@@ -156,7 +156,7 @@
       </div>
       </div>
       <!--==================== SLIDE BTN ====================-->
-      <div class="testimonial__btns flex items-center justify-between gap-2 mt-12 md:mt-0">
+      <div class="testimonial__btns flex md:max-w-[763px] md:mx-auto items-center justify-between gap-2 mt-12 md:mt-0">
         <button class="btn-text btn--scroll-to slider__btn--left px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='left-arrow-alt' ></box-icon></button>
         <button class="btn-text btn--scroll-to slider__btn--right px-5 md:w-auto md:px-8 py-3 text-[12px] no-underline"><box-icon name='right-arrow-alt' animation='tada' ></box-icon></button>
       </div>
@@ -165,8 +165,8 @@
     <!--==================== BRAND SECTION ====================-->
     <section class="section brand w-full mt-[86px] py-[100px] bg-dark-text-clr">
       <div class="max-width md:max-w-7xl md:mx-auto flex items-center flex-col">
-        <h2 class="section__header text-[28px] md:text-[52px] font-medium mb-20 md:mb-[84px] text-center text-light-bg-clr">Millions of Bankists are already making their lifes simpler.</h2>
-        <button class="btn-text btn--scroll-to px-6 md:w-auto md:px-8 py-3 mb-[72px] md:mb-[407px] no-underline bg-secondary-30">Open your free account today!</button>
+        <h2 class="section__header text-[28px] md:text-[52px] font-medium mb-20 md:mb-[84px] text-center text-light-bg-clr">The best day to join Bankist was one year ago. The second best is today!</h2>
+        <button class="btn-text btn--scroll-to px-6 md:w-auto md:px-8 py-4 no-underline bg-secondary-30">Open your free account today!</button>
       </div>
     </section>
     <!--==================== FOOTER ====================-->
@@ -185,6 +185,26 @@
         <p class="footer__copyright text-card-bg-clr text-[14px] md:text-[17px] text-center">© Copyright by <a href="https//bnsdiostudio.netlify" class="outer__link">Bnsd.io.</a> Don't claim as your own product.</p>
       </div>
     </footer>
+
+    <!-- Modal Class -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
     <!-- <section class="section" id="section--1">
       <div class="section__title">
         <h5 class="section__description"></h5>
